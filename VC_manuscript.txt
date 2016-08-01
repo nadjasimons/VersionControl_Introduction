@@ -9,4 +9,6 @@ It has different headings and text like a standard manuscript.
 
 # Material & Methods
 
+The cats dataset in the package MASS is used to create biplots with separate regression lines for men and women.
+
 # Discussion
