@@ -1,0 +1,12 @@
+
+This is some document to demonstrate version control
+
+It has different headings and text like a standard manuscript.
+
+# Abstract
+
+# Introduction
+
+# Material & Methods
+
+# Discussion
