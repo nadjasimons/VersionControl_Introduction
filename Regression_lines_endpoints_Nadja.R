@@ -31,6 +31,8 @@ abline(lm(Females$Bwt~Females$Hwt),col="red")
 summary(Males)
 summary(Females)
 
+tiff(filename = "vc_example_graph.tiff",width = 20,height = 20,units = cm)
+
 plot(Males$Bwt~Males$Hwt,
      xlim=c(5,25),ylim=c(2,4), # here we set the limits based on the overall values
      col="blue",
@@ -43,5 +45,7 @@ lines(c(min(Males$Hwt),max(Males$Hwt)),c(min(Males$Hwt)*as.numeric(coefficients(
 lines(c(min(Females$Hwt),max(Females$Hwt)),c(min(Females$Hwt)*as.numeric(coefficients(lm(Females$Bwt~Females$Hwt))[2],2)+as.numeric(coefficients(lm(Females$Bwt~Females$Hwt))[1],2),
                                          max(Females$Hwt)*as.numeric(coefficients(lm(Females$Bwt~Females$Hwt))[2],2)+as.numeric(coefficients(lm(Females$Bwt~Females$Hwt))[1],2)),
       col="red",lwd=2,lty=1)
+
+dev.off()
 
 par(opar) # set parameters to default
